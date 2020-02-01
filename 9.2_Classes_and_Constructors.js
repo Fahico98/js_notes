@@ -3,7 +3,7 @@
  * 9.2 Classes and Constructors.
  * 
  * A constructor is a function designed for the initialization of newly created objects. Constructors
- * are invoked using the new keyword as described in §8.2.3. Constructor invocations using new
+ * are invoked using the new keyword as described in 8.2.3. Constructor invocations using new
  * automatically create the new object, so the constructor itself only needs to initialize the state
  * of that new object. The critical feature of constructor invocations is that the prototype property
  * of the constructor is used as the prototype of the new object. This means that all objects created
