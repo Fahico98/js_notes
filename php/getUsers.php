@@ -16,10 +16,10 @@
          $output .=
             "<tr>
                <th scope='row'>" . str_pad($row["id"], 3, "0", STR_PAD_LEFT) . "</th>
-               <td>" . $row["name"] .           "</td>
-               <td>" . $row["lastname"] .       "</td>
-               <td>" . $row["e_mail"] .         "</td>
-               <td>" . $row["phone_number"] .   "</td>
+               <td><a href='#' class='nameLink'>" . $row["name"] . "</a></td>
+               <td><a href='#' class='lastnameLink'>" . $row["lastname"] . "</a></td>
+               <td><a href='#' class='eMailLink'>" . $row["e_mail"] . "</a></td>
+               <td><a href='#' class='phoneNumberLink'>" . $row["phone_number"] . "</a></td>
             </tr>";
       }
    }
