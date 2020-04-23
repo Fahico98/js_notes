@@ -32,8 +32,8 @@ function addPost(post){
       setTimeout(() => {
          console.log("inside setTimeout of addPost method !");
          posts.push(post);
-         // const error = false;
-         const error = true;
+         const error = false;
+         //const error = true;
          if(error){
             reject("Error: Something went wrong.");
          }else{
@@ -43,6 +43,7 @@ function addPost(post){
    });
 }
 
+/*
 addPost({
    title: "Fourth post",
    doby: "This is the content of the fourth post...!"
@@ -51,5 +52,16 @@ addPost({
 .catch((error) => {
    console.log(error);
 });
+*/
+
+async function init(){
+   await addPost({
+      title: "Fourth post",
+      doby: "This is the content of the fourth post...!"
+   });
+   getPosts();
+}
+
+init();
 
 console.log("Program finished !");
